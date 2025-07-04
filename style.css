@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('background.jpg'); /* Укажи имя своей картинки */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для читаемости */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#name-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#fullname {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.question {
+  margin: 15px 0;
+}
+
+.question p {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#timer {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.warning-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #f5c518;
+  background-color: rgba(255, 255, 204, 0.9);
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
