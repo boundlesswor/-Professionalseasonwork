@@ -2,17 +2,18 @@ body {
   font-family: Arial, sans-serif;
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   background-image: url('background.jpg'); /* Укажи имя своей картинки */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  font-size: 16px;
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для читаемости */
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -20,27 +21,31 @@ body {
 h1 {
   text-align: center;
   color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 #name-section {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #fullname {
-  padding: 10px;
+  padding: 8px;
   width: 100%;
   max-width: 300px;
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
@@ -48,29 +53,33 @@ button:hover {
 }
 
 .question {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .question p {
   font-weight: bold;
+  font-size: 16px;
 }
 
 label {
   display: block;
-  margin: 10px 0;
+  margin: 8px 0;
+  font-size: 14px;
 }
 
 textarea {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 14px;
+  resize: vertical; /* Позволяет менять высоту, но не ширину */
 }
 
 #result {
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 16px;
 }
 
 #timer {
@@ -79,19 +88,134 @@ textarea {
   right: 10px;
   background: #333;
   color: white;
-  padding: 10px;
+  padding: 8px;
   border-radius: 5px;
-  font-size: 1.1em;
+  font-size: 14px;
   font-weight: bold;
 }
 
 .warning-box {
-  margin-top: 20px;
-  padding: 15px;
+  margin-top: 15px;
+  padding: 10px;
   border: 2px solid #f5c518;
   background-color: rgba(255, 255, 204, 0.9);
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Медиа-запрос для планшетов (768px и меньше) */
+@media (max-width: 768px) {
+  body {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #fullname {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .question p {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  textarea {
+    font-size: 13px;
+  }
+
+  #timer {
+    top: 5px;
+    right: 5px;
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .warning-box {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+/* Медиа-запрос для телефонов (600px и меньше) */
+@media (max-width: 600px) {
+  body {
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  #name-section {
+    margin-bottom: 10px;
+  }
+
+  #fullname {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .question {
+    margin: 8px 0;
+  }
+
+  .question p {
+    font-size: 13px;
+  }
+
+  label {
+    font-size: 12px;
+    margin: 6px 0;
+  }
+
+  textarea {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  #result {
+    font-size: 14px;
+  }
+
+  #timer {
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  .warning-box {
+    font-size: 12px;
+    padding: 6px;
+    margin-top: 10px;
+  }
 }

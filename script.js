@@ -39,7 +39,7 @@ const correctAnswers = {
 // Таймер
 let timerInterval;
 function startTimer() {
-  let timeLeft = 300; // 5 минут в секундах
+  let timeLeft = 600; // 5 минут в секундах
   const timerDisplay = document.getElementById("time-left");
   document.getElementById("timer").style.display = "block";
 
